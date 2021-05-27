@@ -10,10 +10,10 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 function greet(timestring){
-  const time = timestring.split(':')[0];
- if (time < 12){
+  const time = timestring.split(':');
+ if (time[0] < 12){
    return ('Good Morning')
- } else if (time > 17){
+ } else if (time[1] > 17){
    return ('Good Afternoon')
  } else {
    return ('Good Evening')
